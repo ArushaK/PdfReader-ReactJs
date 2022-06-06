@@ -29,10 +29,10 @@ const PDFReader = () => {
           scale={scale}
           setScale={setScale}
           themeHandler={toggleHandler}
-          file="/assets/docs/file-sample.pdf"
+          file="https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf"
         />
 {toggle && <Document
-          file="/assets/docs/file-sample.pdf"
+          file="https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
         >
           {[1,2,3].map(page => (
