@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/PdfReader-ReactJs/static/css/main.d9aae2f0.chunk.css",
+    "main.js": "/PdfReader-ReactJs/static/js/main.14acbe0e.chunk.js",
+    "main.js.map": "/PdfReader-ReactJs/static/js/main.14acbe0e.chunk.js.map",
+    "runtime-main.js": "/PdfReader-ReactJs/static/js/runtime-main.999e7af2.js",
+    "runtime-main.js.map": "/PdfReader-ReactJs/static/js/runtime-main.999e7af2.js.map",
+    "static/css/2.43b2b750.chunk.css": "/PdfReader-ReactJs/static/css/2.43b2b750.chunk.css",
+    "static/js/2.5db8fd77.chunk.js": "/PdfReader-ReactJs/static/js/2.5db8fd77.chunk.js",
+    "static/js/2.5db8fd77.chunk.js.map": "/PdfReader-ReactJs/static/js/2.5db8fd77.chunk.js.map",
+    "static/js/3.7d5d1f97.chunk.js": "/PdfReader-ReactJs/static/js/3.7d5d1f97.chunk.js",
+    "static/js/3.7d5d1f97.chunk.js.map": "/PdfReader-ReactJs/static/js/3.7d5d1f97.chunk.js.map",
+    "index.html": "/PdfReader-ReactJs/index.html",
+    "static/css/2.43b2b750.chunk.css.map": "/PdfReader-ReactJs/static/css/2.43b2b750.chunk.css.map",
+    "static/css/main.d9aae2f0.chunk.css.map": "/PdfReader-ReactJs/static/css/main.d9aae2f0.chunk.css.map",
+    "static/js/2.5db8fd77.chunk.js.LICENSE.txt": "/PdfReader-ReactJs/static/js/2.5db8fd77.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.999e7af2.js",
+    "static/css/2.43b2b750.chunk.css",
+    "static/js/2.5db8fd77.chunk.js",
+    "static/css/main.d9aae2f0.chunk.css",
+    "static/js/main.14acbe0e.chunk.js"
+  ]
+}
