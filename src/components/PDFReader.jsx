@@ -2,14 +2,16 @@ import React, { useState, useEffect } from "react";
 import Loader from "./Loader";
 import { Document, Page, pdfjs } from "react-pdf";
 import ControlPanel from "./ControlPanel";
-import pdf from "../therect_marathi.pdf";
+import redindiespdf from "../pdf/redindies.pdf";
+import thrivenowpdf from "../pdf/thrivenow.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const PDFReader = () => {
+const PDFReader = (props) => {
   const [scale, setScale] = useState(0.7);
   const [toggle, setToggle] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [lang, setLang] = useState(" ");
+  console.log(props.url)
 
   function onDocumentLoadSuccess() {
     // setNumPages(numPages);
@@ -31,7 +33,7 @@ const PDFReader = () => {
 
   return (
     <div>
-      <Loader isLoading={isLoading} />
+      {/* <Loader isLoading={isLoading} /> */}
       {!isLoading && (
         <section
           id="pdf-section"
@@ -42,11 +44,19 @@ const PDFReader = () => {
             setScale={setScale}
             themeHandler={toggleHandler}
             langHandler={langHandler}
-            file="https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf"
           />
 
-          {toggle && lang === "Marathi" && (
-            <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+          {toggle && props.url === "/thrivenow" &&(
+            <Document file={thrivenowpdf} onLoadSuccess={onDocumentLoadSuccess}>
+              {[1].map((page) => (
+                <Page pageNumber={page} scale={scale} />
+              ))}
+              {/* <Page scale={scale} /> */}
+            </Document>
+          )}
+
+          {toggle && props.url === "/redindies" &&(
+            <Document file={redindiespdf} onLoadSuccess={onDocumentLoadSuccess}>
               {[1].map((page) => (
                 <Page pageNumber={page} scale={scale} />
               ))}

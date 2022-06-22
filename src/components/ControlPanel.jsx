@@ -4,7 +4,7 @@ import PDFPrinter from "./PDFPrinter";
 const ControlPanel = (props) => {
   const { file, pageNumber, numPages, setPageNumber, scale, setScale } = props;
   const [toggle, setToggle] = useState(true);
-  const [lang, setlang] = useState(" ");
+  const [lang, setlang] = useState("");
 
   const isMinZoom = scale < 0.6;
   const isMaxZoom = scale >= 2.0;
@@ -38,6 +38,7 @@ const ControlPanel = (props) => {
         </button>
         <label>Language: </label>
         <select value={lang} style={{ width: "40%" }} onChange={handleSelect}>
+          <option value="English">English</option>
           <option value="Hindi">Hindi</option>
           <option value="Marathi">Marathi</option>
           <option value="Gujrati">Gujrati</option>
